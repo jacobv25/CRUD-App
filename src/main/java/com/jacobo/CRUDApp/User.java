@@ -25,6 +25,8 @@ public class User {
     private String firstName;
     @Column(length = 45, nullable = false, name="last_name")
     private String lastName;
+    @Column
+    private boolean enabled;
 
     @Override
     public boolean equals(Object o) {
